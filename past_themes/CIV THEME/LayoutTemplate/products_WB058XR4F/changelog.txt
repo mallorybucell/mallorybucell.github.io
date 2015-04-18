@@ -1,0 +1,28 @@
+Version 2.5
+  - Updated to Bootstrap 3.3.4
+  - Updated to jQuery 1.11.2
+  - Updated to scrollTo 1.4.14
+  - Updated to Magnific Popup 1.0.0
+  - Updated to Twitter Fetcher 13.0
+  - Updated to Parsley 2.0.7
+  - Updated to gmaps 0.4.17
+  - Removed plugin knob, localscroll, mixitup
+  - Restructured gallery filter feature using shuffle 3.0.4
+  - Restructured skill chart feature using easy pie chart 2.1.6
+  - Restructured and added hero section background parallax
+  - Restructured various styles and scripts
+  - Separated map and contact js script from custom script
+  - Added blog template
+  - Added preloader
+  - Updated doc
+  - Tidied up and bug fixed
+
+Version 2.0
+  - Major fixes on mark-up and script
+  - Updated to Bootstrap 3.0.3
+  - Updated to Font Awesome 4.0.3
+  - Added twitter feeds feature
+  - Added working ajax contact form feature
+	
+Version 1.0
+  - Initial release
