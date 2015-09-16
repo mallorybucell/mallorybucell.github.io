@@ -270,6 +270,13 @@ Main components
 .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
   display: inline-block;
 }
+
+.cd-date {
+  color: #000000;
+  font-weight: bold;
+  font-size: 20px;
+  font-size: 1.25rem;
+}
 .cd-timeline-content p {
   margin: 1em 0;
   line-height: 1.6;
