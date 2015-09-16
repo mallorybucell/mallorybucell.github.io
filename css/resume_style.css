@@ -22,7 +22,7 @@ body {
 }
 
 a {
-  color: #acb7c0;
+  color: #ffffff;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -493,4 +493,10 @@ Main components
     -o-transform: translateX(0);
     transform: translateX(0);
   }
+}
+
+/*Other custom components */
+.lead-space {
+  margin-top: 10px;
+  padding-top: 2px;
 }
