@@ -21,7 +21,7 @@ body {
   background-color: #18bc9c;
 }
 
-a {
+#resumeContainer a {
   color: #ffffff;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
