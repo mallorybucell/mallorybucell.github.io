@@ -1,12 +1,15 @@
 var resumeEvents = [
-  { type: "employment", organization: "American Institutes for Research (AIR)", location: "Washington, D.C.", title: "Assistant Item Development Manager", overview: "I started at AIR in 2009 as a temporary data-entry and QA employee. After becoming an expert in the use of internal NLP software, I eventually gained increasing responsibility across several aspects of the test-development process: ", highlights: ["Led and managed 12-person team for full-cycle, assessment creation projects in hard-to-measure content areas", "Developed, scheduled, tracked, and conducted quality control of blueprints, test forms, and test questions for online educational assessments", "Trained and on-boarded new assessment staff and vendors on online CMS and best-practices in writing and reviewing test questions", "Designed and maintained comprehensive training materials, task manuals, and knowledge management documentation and procedures", "Consulted software developers and test content creators in development and use of Natural Language Processing (NLP) essay-scoring software", "Team-level technical expert on proprietary item and essay-scoring software tools: planned and facilitated workshops to train on-site and remote staff, tested software updates, and tracked functionality" ], tags: [""], startDate: 2009, endDate: 2015 },
-  { type: "education", organization: "The Iron Yard Academy", location: "Washington, D.C.", title: "Cerficate: Ruby on Rails Engineering", overview: "12-week intensive code school", highlights: ["Worked alone and in teams to build command line scripts and webapps in Ruby language and associated frameworks", "Participated in agile development process and TDD", "Hands-on problem-solving of common engineering issues"], tags: [""], startDate: 2015, endDate: 2015 }, 
-  { type: "volunteer", organization: "FoundryESL", location: "Washington, D.C.", title: "Intermediate ESL Co-Teacher", overview: "Free ESL classes, taught for 2 hours once/week.", highlights: ["Researched and developed lessons based on topic list", "graded assignments", "led classroom activities and discussion"], tags: [""], startDate: 2015, endDate: 2015 }
+  { type: "education", organization: "The Iron Yard Academy", location: "Washington, DC", title: "Cerficate: Ruby on Rails Engineering", overview: "12-week intensive code school", highlights: ["Worked alone and in teams to build command line scripts and webapps in Ruby language and associated frameworks", "Participated in agile development process and TDD", "Hands-on problem-solving of common engineering issues"], tags: [""], startDate: "January 2015", endDate: "April 2015" }, 
+  { type: "employment", organization: "American Institutes for Research (AIR)", location: "Washington, DC", title: "Assistant Item Development Manager", overview: "I started at AIR in 2009 as a temporary data-entry and QA employee. After becoming an expert in the use of internal NLP software, I eventually gained increasing responsibility across several aspects of the test-development process: ", highlights: ["Led and managed 12-person team for full-cycle, assessment creation projects in hard-to-measure content areas", "Developed, scheduled, tracked, and conducted quality control of blueprints, test forms, and test questions for online educational assessments", "Trained and on-boarded new assessment staff and vendors on online CMS and best-practices in writing and reviewing test questions", "Designed and maintained comprehensive training materials, task manuals, and knowledge management documentation and procedures", "Consulted software developers and test content creators in development and use of Natural Language Processing (NLP) essay-scoring software", "Team-level technical expert on proprietary item and essay-scoring software tools: planned and facilitated workshops to train on-site and remote staff, tested software updates, and tracked functionality" ], tags: [""], startDate: "December 2009", endDate: "January 2015" },
+  { type: "volunteer", organization: "FoundryESL", location: "Washington, DC", title: "Intermediate ESL Co-Teacher", overview: "Free ESL classes, taught for 2 hours once/week.", highlights: ["Researched and developed lessons based on topic list", "graded assignments", "led classroom activities and discussion"], tags: [""], startDate: "May 2015", endDate: "August 2015" },
+  { type: "education", organization: "Georgetown University", location: "Washington, DC", title: "Cerficate: Project Management", overview: "", highlights: [""], tags: [""], startDate: "April 2012", endDate: "April 2012" }, 
+  { type: "education", organization: "The George Washington University", location: "Washington, DC", title: "MA: International Affairs, Conflict Resolution and Asia", overview: "", highlights: [""], tags: [""], startDate: "September 2007", endDate: "May 2009" }, 
+  { type: "education", organization: "University of Rochester", location: "Rochester, NY", title: "BA: Linguistics, Japanese Language and Literature", overview: "", highlights: ["Summa Cum Laude"], tags: [""], startDate: "September 2003", endDate: "May 2007" }
 ];
 
 var timelineHtml = ""
 
-function setTimelineGlyphicon ( event ) {
+function setTimelineGlyphicon ( event ) {    
   var glyphicon = ""
 
   switch ( event.type ) {
@@ -25,10 +28,9 @@ function setTimelineGlyphicon ( event ) {
   return glyphicon
 }
 
-function createHighlightsList(highlightsArray) {
-  var highlightsHtml = ""
-
-  highlightsArray.forEach( function(highlight) {
+function createHighlightsList( event ) {
+  var highlightsHtml = ''
+  event.highlights.forEach( function(highlight) {
     highlightsHtml += '<li>' + highlight + '</li>';
     }
     );
@@ -47,8 +49,13 @@ function createTimelineBlock() {
     //create and populate timeline content div
     timelineHtml += '<div class=\"cd-timeline-content\">';
     timelineHtml += '<h2>' + event.title + '</h2>';
+    timelineHtml += '<h4><em>' + event.organization + '</em></h4>';
+    timelineHtml += '<h5>' + event.location + '</h5>';
     timelineHtml += '<p>' + event.overview + '</p>';
-    timelineHtml += '<ul>' + createHighlightsList( event.highlights ) + '</ul>';
+    console.log(event)
+    if ( event.highlights[0] === "") { 
+      console.log(event['title'])
+    } else { timelineHtml += '<ul>' + createHighlightsList( event ) + '</ul>'; }
     //insert read-more here
     timelineHtml += '<span class=\"cd-date\">' + event.startDate + '-' + event.endDate + '</span></div></div>';
   }
