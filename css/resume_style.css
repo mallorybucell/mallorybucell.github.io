@@ -501,6 +501,10 @@ Main components
   padding-top: 2px;
 }
 
+.lead-space a {
+  color: #ffffff;
+}
+
 #cd-timeline ul li { 
   list-style-type: disc;
   list-style-position: inside;
