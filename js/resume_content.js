@@ -32,7 +32,6 @@ function createHighlightsList(highlightsArray) {
     highlightsHtml += '<li>' + highlight + '</li>';
     }
     );
-//code here
   return highlightsHtml;
 }
 
@@ -56,7 +55,10 @@ function createTimelineBlock() {
   return timelineHtml;
 }
 
-
+//create content on page load
+jQuery(document).ready(function($){
+  $( "#cd-timeline" ).append( createTimelineBlock() );
+});
 
     //final timelineHtml should produce this html block:
 
