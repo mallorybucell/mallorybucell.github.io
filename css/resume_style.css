@@ -500,3 +500,10 @@ Main components
   margin-top: 10px;
   padding-top: 2px;
 }
+
+#cd-timeline ul li { 
+  list-style-type: disc;
+  list-style-position: inside;
+  padding: 10px 0 10px 20px;
+  text-indent: -1em;
+}
