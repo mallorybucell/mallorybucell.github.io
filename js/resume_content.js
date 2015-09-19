@@ -62,9 +62,8 @@ function createTimelineBlock() {
     timelineHtml += '<h4><em>' + event.organization + '</em></h4>';
     timelineHtml += '<h5>' + event.location + '</h5>';
     timelineHtml += '<p>' + event.overview + '</p>';
-    console.log(event)
     if ( event.highlights[0] === "") { 
-      console.log(event['title'])
+      console.log('this event has no highlights. title: ' + event['title'])
     } else { timelineHtml += '<ul>' + createHighlightsList( event ) + '</ul>'; }
     //insert read-more here
     timelineHtml += '<span class=\"cd-date\">' + event.startDate + '-' + event.endDate + '</span></div></div>';
