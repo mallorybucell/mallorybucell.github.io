@@ -72,9 +72,9 @@ function createTimelineBlock() {
 }
 
 //create content on page load
-jQuery(document).ready(function($){
-  $( "#cd-timeline" ).append( createTimelineBlock() );
-});
+// jQuery(document).ready(function($){
+//   $( "#cd-timeline" ).append( createTimelineBlock() );
+// });
 
     //final timelineHtml should produce similar code block:
 
