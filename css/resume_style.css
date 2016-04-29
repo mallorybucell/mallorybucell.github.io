@@ -17,12 +17,12 @@ html * {
 body {
   font-size: 100%;
   font-family: "Droid Serif", serif;
-  color: #7f8c97;
-  background-color: #18bc9c;
+  color: #2c3e50;
+  background-color: #fff;
 }
 
 #resumeContainer a {
-  color: #ffffff;
+  color: #2c3e50;
   text-decoration: none;
   font-family: "Open Sans", sans-serif;
 }
@@ -59,30 +59,7 @@ Modules - reusable parts of our design
 Main components 
 
 -------------------------------- */
-/*header {
-  height: 200px;
-  line-height: 200px;
-  text-align: center;
-  background: #303e49;
-  position: relative;
-  clear: both;
-}
-#header h1 {
-  color: white;
-  font-size: 18px;
-  font-size: 1.125rem;
-}
-@media only screen and (min-width: 1170px) {
-  header {
-    height: 300px;
-    line-height: 300px;
-    position: relative;
-  }
-  header h1 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-}*/
+
 
 #cd-timeline {
   position: relative;
@@ -502,7 +479,7 @@ Main components
 }
 
 .lead-space a {
-  color: #ffffff;
+  color: #2c3e50;
 }
 
 #cd-timeline ul li { 
@@ -511,3 +488,8 @@ Main components
   padding: 10px 0 10px 20px;
   text-indent: -1em;
 }
+
+/* Customization */
+/*#cd-timeline {
+    background-color: #18bc9c;
+}*/
