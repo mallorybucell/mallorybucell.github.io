@@ -1,7 +1,7 @@
 var resumeEvents = [ 
-  { type: "education", organization: "Stanford University, location: Coursera", title: "Certificate: Machine Learning", overview: "", highlights: [""], tags: [""], startDate: "September 2015", endDate: "December 2015" },
+  { type: "education", organization: "Stanford University", location: "via Coursera", title: "Certificate: Machine Learning", overview: "Skills learned: ", highlights: ["Supervised learning: parametric/non-parametric algorithms, support vector machines, neural networks", " Unsupervised learning: clustering, dimensionality reduction, recommender systems", "Best practices in machine learning: bias/variance theory; innovation process in machine learning and AI)"], tags: [""], startDate: "September 2015", endDate: "December 2015" },
   { type: "volunteer", organization: "Girl Develop It", location: "Washington, DC", title: "Intro to Ruby on Rails Teaching Assistant", overview: "Provide technical support and pair programming advice for students taking 4-week intro course.", highlights: [""], tags: [""], startDate: "September 2015", endDate: "October 2015" }, 
-  { type: "volunteer", organization: "DC Web Women's Code(Her) Conference", location: "Washington, DC", title: "Volunteer", overview: "Provide logistical and tecnical support for all-day event.", highlights: ["Assist attendees in finding sessions", "Assist speakers in room setup", "Facilitated setup and clean-up for provided meals"], tags: [""], startDate: "Septmeber 2015", endDate: "September 2015" }, 
+  { type: "volunteer", organization: "DC Web Women's Code(Her) Conference", location: "Washington, DC", title: "Volunteer", overview: "Provide logistical and technical support for all-day event.", highlights: ["Assist attendees in finding sessions", "Assist speakers in room setup", "Facilitated setup and clean-up for provided meals"], tags: [""], startDate: "September 2015", endDate: "September 2015" }, 
   { type: "volunteer", organization: "FoundryESL", location: "Washington, DC", title: "Intermediate ESL Co-Teacher", overview: "Free ESL classes, taught for 2 hours once/week.", highlights: ["Researched and developed lessons based on topic list", "graded assignments", "led classroom activities and discussion"], tags: [""], startDate: "May 2015", endDate: "August 2015" },
   { type: "volunteer", organization: "Ruby for Good", location: "Washington, DC", title: "Volunteer Rubyist", overview: "Worked with team of Rails and JavaScript engineers to create CMS for youth-focused non-profit.", highlights: [""], tags: [""], startDate: "July 31, 2015", endDate: "August 2, 2015" }, 
   { type: "volunteer", organization: "DC FemTech", location: "Washington, DC", title: "Hack for Good Attendee", overview: "Worked with team of 6 to build a new Wordpress site for children's non-profit during weekend hackathon", highlights: [""], tags: [""], startDate: "May 2015", endDate: "May 2015" }, 
@@ -49,7 +49,7 @@ function createHighlightsList( event ) {
 
 function createTimelineBlock() {
   for ( event of resumeEvents ) {
-
+    console.log(event)
     /* create timeline block and create-populate-close associated image div */
     timelineHtml += '<div class=\"cd-timeline-block\"> <div class=\"cd-timeline-img ';
     timelineHtml += 'cd-' + event.type + '\">';
@@ -75,7 +75,7 @@ function createTimelineBlock() {
 // jQuery(document).ready(function($){
 //   $( "#cd-timeline" ).append( createTimelineBlock() );
 // });
-
+ 
 //     // final timelineHtml should produce similar code block:
 
 //     <div class="cd-timeline-block">
