@@ -1,5 +1,6 @@
-var resumeEvents = [
-  { type: "volunteer", organization: "Girl Develop It", location: "Washington, DC", title: "Intro to Ruby on Rails Teaching Assistant", overview: "Provide technical support and pair programming advice for students taking 4-week intro course.", highlights: [""], tags: [""], startDate: "September 2015", endDate: "present" }, 
+var resumeEvents = [ 
+  { type: "education", organization: "Stanford University, location: Coursera", title: "Certificate: Machine Learning", overview: "", highlights: [""], tags: [""], startDate: "September 2015", endDate: "December 2015" },
+  { type: "volunteer", organization: "Girl Develop It", location: "Washington, DC", title: "Intro to Ruby on Rails Teaching Assistant", overview: "Provide technical support and pair programming advice for students taking 4-week intro course.", highlights: [""], tags: [""], startDate: "September 2015", endDate: "October 2015" }, 
   { type: "volunteer", organization: "DC Web Women's Code(Her) Conference", location: "Washington, DC", title: "Volunteer", overview: "Provide logistical and tecnical support for all-day event.", highlights: ["Assist attendees in finding sessions", "Assist speakers in room setup", "Facilitated setup and clean-up for provided meals"], tags: [""], startDate: "Septmeber 2015", endDate: "September 2015" }, 
   { type: "volunteer", organization: "FoundryESL", location: "Washington, DC", title: "Intermediate ESL Co-Teacher", overview: "Free ESL classes, taught for 2 hours once/week.", highlights: ["Researched and developed lessons based on topic list", "graded assignments", "led classroom activities and discussion"], tags: [""], startDate: "May 2015", endDate: "August 2015" },
   { type: "volunteer", organization: "Ruby for Good", location: "Washington, DC", title: "Volunteer Rubyist", overview: "Worked with team of Rails and JavaScript engineers to create CMS for youth-focused non-profit.", highlights: [""], tags: [""], startDate: "July 31, 2015", endDate: "August 2, 2015" }, 
@@ -10,12 +11,11 @@ var resumeEvents = [
   { type: "volunteer", organization: "Language, ETC", location: "Washington, DC", title: "ESL Tutor", overview: "Held weekly tutoring and conversation hour to improve production and comprehension of written and spoken English in refugee and expat populations", highlights: ["Designed, researched, and presented lessons for students of various skill and comprehension levels"], tags: [""], startDate: "2012", endDate: "2014" }, 
   { type: "education", organization: "Georgetown University", location: "Washington, DC", title: "Cerficate: Project Management", overview: "", highlights: [""], tags: [""], startDate: "April 2012", endDate: "April 2012" }, 
   { type: "education", organization: "The George Washington University", location: "Washington, DC", title: "MA: International Affairs, Conflict Resolution and Asia", overview: "", highlights: [""], tags: [""], startDate: "September 2007", endDate: "May 2009" }, 
-  { type: "employment", organization: "Diplomatic and Consular Officers, Retired", location: "Washington, DC", title: "Program and Membership Assistant Intern", overview: "", 
-  highlights: ["Coordinated planning and execution of annual conference for around 200 attendees, including processing registration, creating and distributing event materials, and providing administrative and technical support to staff, guest speakers, and attendees before, during, and after event", "Reduced processing time of monetary gifts and acknowledgements by 50% in overhauling system", "Provided technical support and customer service to diverse membership of high-level domestic and foreign diplomats and civilian populations, in-person and via phone/email"], tags: [""], startDate: "2007", endDate: "2008" }, 
+  { type: "employment", organization: "Diplomatic and Consular Officers, Retired", location: "Washington, DC", title: "Program and Membership Assistant Intern", overview: "", highlights: ["Coordinated planning and execution of annual conference for around 200 attendees, including processing registration, creating and distributing event materials, and providing administrative and technical support to staff, guest speakers, and attendees before, during, and after event", "Reduced processing time of monetary gifts and acknowledgements by 50% in overhauling system", "Provided technical support and customer service to diverse membership of high-level domestic and foreign diplomats and civilian populations, in-person and via phone/email"], tags: [""], startDate: "2007", endDate: "2008" }, 
   { type: "education", organization: "University of Rochester", location: "Rochester, NY", title: "BA: Linguistics, Japanese Language and Literature", overview: "", highlights: ["Summa Cum Laude"], tags: [""], startDate: "September 2003", endDate: "May 2007" },
   { type: "employment", organization: "Eriez Manufacturing Co.", location: "Erie, PA", title: "International Department Assistant, Summer Intern", overview: "", highlights: ["Designed and implemented financial reconciliation project between headquarters accounting department and field office sales representatives across Asia and South America", "Shipped sensitive materials internationally, conducting cost-comparisons and acquiring vendors, facilitating internal packing and shipping logistics"], tags: [""], startDate: "2005", endDate: "2006" }, 
   { type: "employment", organization: "Department of Clinical and Social Psychology, University of Rochester", location: "Rochester, NY", title: "Research Assistant", overview: "Grant-sponsored, psycholinguistics research focused on prosody usage and comprehension in autistic populations", highlights: ["Performed data-entry and analysis", "Designed stimuli collaboratively with other research assistants and project lead", "Conducted literature review", "Participated in early stages of editing academic research paper for publication", "Created online survey collaboratively to collect baseline data on respondents\' interpretation of emotional connotation and affect in language"], tags: [""], startDate: "February 2004", endDate: "November 2005" }, 
-];
+]; 
 
 var timelineHtml = ""
 
@@ -71,25 +71,25 @@ function createTimelineBlock() {
   return timelineHtml;
 }
 
-//create content on page load
+// create content on page load
 // jQuery(document).ready(function($){
 //   $( "#cd-timeline" ).append( createTimelineBlock() );
 // });
 
-    //final timelineHtml should produce similar code block:
+//     // final timelineHtml should produce similar code block:
 
-    // <div class="cd-timeline-block">
-    //   <div class="cd-timeline-img cd-employment">
-    //     <span class="glyphicon glyphicon-briefcase" aria-hidden="true"</span>
-    //   </div> 
-    //   <div class="cd-timeline-content">
-    //     <h2>Employment</h2>
-    //     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
-    //     <ul><li>item1</li><li>itemEtc</li></ul>
-    //     <a href="#0" class="cd-read-more">Read more</a>
-    //     <span class="cd-date">Jan 14</span>
-    //   </div> 
-    // </div> 
+//     <div class="cd-timeline-block">
+//       <div class="cd-timeline-img cd-employment">
+//         <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+//       </div> 
+//       <div class="cd-timeline-content">
+//         <h2>Employment</h2>
+//         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, optio, dolorum provident rerum aut hic quasi placeat iure tempora laudantium ipsa ad debitis unde? Iste voluptatibus minus veritatis qui ut.</p>
+//         <ul><li>item1</li><li>itemEtc</li></ul>
+//         <a href="#0" class="cd-read-more">Read more</a>
+//         <span class="cd-date">Jan 14</span>
+//       </div> 
+//     </div> 
 
 
 
